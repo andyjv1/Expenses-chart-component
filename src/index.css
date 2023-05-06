@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Main Format */
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: hsl(27, 66%, 92%);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Component Format */
+
+.rectangle{
+width: 33.75rem;
+height:7.8125rem;
+display: flex;
+justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+align-items: center;
+padding: 0 2.4375rem 0 2rem;
+margin-bottom: 1.5rem;
+border-radius: 20px;
+}
+
+.square{
+  width: 33.75rem;
+  height:31.9375rem;
+  background-color:hsl(33, 100%, 98%);
+border-radius: 20px;
+padding: 2rem 2.5rem 4.3125rem 2.5rem;
+}
+/* Sub Component Format */
+
+.squareText{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 2rem;
+}
+
+hr{
+    border-top: 2px solid hsl(27, 66%, 92%);
+}
+
+.chart{
+      margin: 4.125rem 0 2rem 0;
+      height: 11.125rem;
+}
+/* Text Format */
+
+h3, p{
+  font-size: 1.125rem;
+      font-weight: 400;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.rectangle p{
+color:white;
+margin: 0 0 .5rem 0;
+}
+
+.rectangle h2{
+color:#FFFBF6;
+margin: 0;
+}
+
+.square h2, .square h1, .square h3{
+color: hsl(25, 47%, 15%);
+}
+
+.square p{
+color: hsl(28, 10%, 53%);
+}
+
+.square h2{
+margin-top: 0;
+}
+
+.square h1, .square h3, .square p{
+margin: 0;
+}
+
+.square h3{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+.rectangle{
+width: 21.4375rem;
+height:6.0625rem;
+border-radius: 10px;
+padding: 0 2.25rem 0 1.5rem;
+margin-bottom: 1rem;
+
+}
+
+.square{
+  width: 21.4375rem;
+  height:26.3125rem;
+border-radius: 10px;
+padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+
+}
+
+.chart{
+      height: 11.0625rem;
+    margin: 3.25rem 0 1.5rem;
+}
+
+.squareText{
+      padding-top: 1rem;
+}
+img{
+  width: 3.75rem;
+  height: 2.5rem;
+}
+
+h3, p{
+  font-size: 0.9375rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 1.875rem;
+}
+.square h3{
+    margin-top: 1rem;
+}
+}
