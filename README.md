@@ -52,7 +52,7 @@ Users should be able to:
 
 ### What I learned
 
-This is my first react project. This  was a great way for me to learn more about react. I also learned how to use Chart.js beceause it was my first time using this library.
+This is my first react project. This  was a great way for me to learn more about react. I also learned how to use Chart.js because it was my first time using this library.
 
 ### Useful resources
 
