@@ -28,7 +28,7 @@ const Square = () => {
                 },
                 fill: false,
                 hoverBackgroundColor: (dataColor) => {
-                    const hoverColor = dataColor.index === dateToday ? "hsl(10, 78%, 80%)" : "hsl(187, 34%, 85%)";
+                    const hoverColor = dataColor.index === dateToday ? "hsl(187, 34%, 85%)" : "hsl(10, 78%, 80%)";
                     return hoverColor;
                 },
                 borderRadius: 4,
