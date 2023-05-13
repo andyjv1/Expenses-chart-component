@@ -1,152 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Main Format */
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: hsl(27, 66%, 92%);
 }
 
-main{
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   flex-direction: column;
+  width: 21.4375em;
 }
 
 /* Component Format */
 
-.rectangle{
-width: 33.75rem;
-height:7.8125rem;
-display: flex;
-justify-content: space-between;
+.rectangle {
+  width: 100%;
+  height: 6.0625em;
+  border-radius: 10px;
+  padding: 0 1.5em 0 1.25em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
   background-color: hsl(10, 79%, 65%);
-align-items: center;
-padding: 0 2.4375rem 0 2rem;
-margin-bottom: 1.5rem;
-border-radius: 20px;
+  align-items: center;
 }
 
-.square{
-  width: 33.75rem;
-  height:31.9375rem;
-  background-color:hsl(33, 100%, 98%);
-border-radius: 20px;
-padding: 2rem 2.5rem 4.3125rem 2.5rem;
+.square {
+    width: 100%;
+  height: 26.3125em;
+  border-radius: 10px;
+  padding: 1.5em 1.25em 1.5em 1.25em;
+  background-color: hsl(33, 100%, 98%);
 }
 /* Sub Component Format */
 
-.squareText{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 2rem;
+.squareText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
 }
 
-hr{
-    border-top: 2px solid hsl(27, 66%, 92%);
+hr {
+  border-top: 2px solid hsl(27, 66%, 92%);
 }
 
-.chart{
-      margin: 4.125rem 0 2rem 0;
-      height: 11.125rem;
+.chart {
+  height: 11.0625em;
+  margin: 3.25em 0 1.5em;
 }
+
+img {
+  width: 3.75em;
+  height: 2.5em;
+}
+
 /* Text Format */
 
-h3, p{
-  font-size: 1.125rem;
-      font-weight: 400;
+.rectangle p {
+  font-size: 0.625em;
+  margin: 0 0 0.2666666666em 0;
 }
 
-h2{
-    font-size: 2rem;
+.rectangle p,
+.rectangle h2 {
+  color: white;
 }
 
-h1{
-    font-size: 3rem;
+h1 > p {
+  font-size: 0.5em;
 }
 
-.rectangle p{
-color:white;
-margin: 0 0 .5rem 0;
+h3 > p {
+  font-size: 1em;
 }
 
-.rectangle h2{
-color:#FFFBF6;
-margin: 0;
+.squareText h3 {
+  font-size: 0.9375em;
 }
 
-.square h2, .square h1, .square h3{
-color: hsl(25, 47%, 15%);
+h2 {
+  font-size: 1.5em;
 }
 
-.square p{
-color: hsl(28, 10%, 53%);
+h1 {
+  font-size: 1.875em;
+}
+.square h3 {
+  margin-top: 1em;
+  text-align: right;
 }
 
-.square h2{
-margin-top: 0;
+h3,
+p {
+  font-weight: 400;
 }
 
-.square h1, .square h3, .square p{
-margin: 0;
+.rectangle h2 {
+  color: #fffbf6;
+  margin: 0;
 }
 
-.square h3{
-    margin-top: 1rem;
+.square h2,
+.square h1,
+.square h3 {
+  color: hsl(25, 47%, 15%);
 }
 
-@media screen and (max-width: 375px) {
-.rectangle{
-width: 21.4375rem;
-height:6.0625rem;
-border-radius: 10px;
-padding: 0 2.25rem 0 1.5rem;
-margin-bottom: 1rem;
-
+.square p {
+  color: hsl(28, 10%, 53%);
 }
 
-.square{
-  width: 21.4375rem;
-  height:26.3125rem;
-border-radius: 10px;
-padding: 1.5rem 1.25rem 1.5rem 1.25rem;
-
+.square h2 {
+  margin-top: 0;
 }
 
-.chart{
-      height: 11.0625rem;
-    margin: 3.25rem 0 1.5rem;
+.square h1,
+.square h3,
+.square p {
+  margin: 0;
 }
 
-.squareText{
-      padding-top: 1rem;
-}
-img{
-  width: 3.75rem;
-  height: 2.5rem;
+.square h3 {
+  margin-top: 1em;
 }
 
-h3, p{
-  font-size: 0.9375rem;
+@media screen and (min-width: 376px) {
+main{
+  width: 100%;
+}  .rectangle {
+    max-width: 33.75em;
+    height: 7.8125em;
+    padding: 0 2.4375em 0 2em;
+    margin-bottom: 1.5em;
+    border-radius: 20px;
+  }
+
+  .square {
+    max-width: 33.75em;
+    height: 31.9375em;
+    border-radius: 20px;
+    padding: 2em 2.5em 4.3125em 2.5em;
+  }
+
+  .squareText {
+    padding-top: 2em;
+  }
+
+  .chart {
+    margin: 4.125em 0 2em 0;
+    height: 11.125em;
+  }
+
+  img {
+    width: 4.5em;
+    height: 3em;
+  }
+
+  h3,
+  p {
+    font-size: 1.125em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h1 > p {
+    font-size: 0.375em;
 }
 
-h2{
-    font-size: 1.5rem;
+.squareText h3 {
+    font-size: 1.125em;
 }
 
-h1{
-    font-size: 1.875rem;
-}
-.square h3{
-    margin-top: 1rem;
-}
+  .rectangle p {
+    margin: 0 0 0.5em 0;
+        font-size: 0.5625em;
+  }
+  
+  hr{
+    margin:0;
+  }
 }
