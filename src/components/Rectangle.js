@@ -5,8 +5,8 @@ const Rectangle = () => {
     return (
         <div className='rectangle'>
             <h2>
-                <p>My balance</p>
-                $921.48
+                My balance
+                <p>$921.48</p>
             </h2>
             <img src={logo} alt="" /></div>
     )

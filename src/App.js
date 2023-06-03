@@ -3,7 +3,7 @@ import Rectangle from "./components/Rectangle";
 
 function App() {
   return (
-    <main className="App">
+    <main>
       <Rectangle />
       <Square />
     </main>

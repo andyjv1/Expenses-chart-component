@@ -41,8 +41,8 @@ const Square = () => {
     return (
         <div className='square'>
             <div>
-                <h2 className="">Spending - Last 7 days </h2>
-                <div className='chart'>
+                <h1 className="">Spending - Last 7 days </h1>
+                <div className='square__chart'>
                 <Bar
                     data={state}
                     options={{
@@ -102,18 +102,18 @@ const Square = () => {
                 </div>
             </div>
             <hr></hr>
-            <div className="squareText">
-                <h1>
-                    <p>
+            <div className="square__text">
+                <h2>
+                    
                         Total this month
-                    </p>
-                    $478.33
-                </h1>
+                    
+                    <p>$478.33</p>
+                </h2>
 
-                <h3>
-                    +2.4%
-                    <p>from last month</p>
-                </h3>
+                <h2>
+                    <p>+2.4%</p>
+                    from last month
+                </h2>
             </div>
         </div>
     )
