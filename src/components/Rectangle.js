@@ -8,7 +8,7 @@ const Rectangle = () => {
                 My balance
                 <p>$921.48</p>
             </h2>
-            <img src={logo} alt="" /></div>
+            <img src={logo} alt="Logo" /></div>
     )
 }
 
